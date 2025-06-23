@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie buzz</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <div class="flex justify-between items-center p-4 bg-black">
+    <div class="flex items-center space-x-2">
+      <img src="./images/logo.png " alt=" Logo" class="h-16">
+      <button class="bg-yellow-400 text-black px-3 py-1 rounded">Home</button>
+      <button>Showtimings</button>
+      <button>Cinemas</button>
+      <button>Offers</button>
+      <button>More</button>
+    </div>
+    <div class="flex items-center space-x-2">
+      <input type="text" placeholder="Search..." class="rounded p-1 text-black" />
+      <button class="bg-yellow-400 text-black px-3 py-1 rounded">Login</button>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="relative">
+    <img src="https://etvbharatimages.akamaized.net/etvbharat/prod-images/20-06-2025/1200-675-24416472-257-24416472-1750402207458.jpg" alt="Banner" class="w-full h-80 object-cover opacity-30">
+    <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center p-10">
+  <span class="bg-yellow-700 text-xs rounded mb-2 inline-block w-[80px] text-center">New Release</span>
+      <h1 class="text-4xl font-bold">SITAARE ZAMEEN PAR</h1>
+      <p class="mt-2 text-sm">UA 13+ • 2h 39m • Friday, Jun 20, 2025 • Drama, Comedy • Hindi</p>
+      <p class="mt-2 text-sm max-w-xl">Sitaare Zameen Par is an entertaining and heartwarming film filled with joy, laughter, and happiness. It follows Gulshan, a smug basketball coach sentenced to community s...</p>
+      <div class="flex justify-center mt-4">
+  <button class="bg-yellow-400 text-black px-2 py-1 text-2xl rounded">
+    Book Now
+  </button>
+</div>
+
+    </div>
+    <!-- sub poster -->
+    <div class="absolute right-10 top-10">
+      <img src="https://media.assettype.com/gulfnews%2F2025-05-15%2Fg7mf1zaq%2F202505053396070.jpg?w=480&auto=format%2Ccompress&fit=max" alt="Movie Poster" class="h-60 rounded shadow-lg">
+    </div>
+  </div>
+
+  <!-- Quick Book -->
+  <div class="bg-yellow-100 text-black p-4 flex flex-wrap gap-2 justify-center">
+    <button class="bg-yellow-400 px-3 py-1 rounded">Movie</button>
+    <button class="bg-white px-3 py-1 rounded border">Cinema</button>
+<select class="p-1 rounded border">
+  <option value="">Select Category</option>
+  <option value="action">Action</option>
+  <option value="comedy">Comedy</option>
+  <option value="drama">Drama</option>
+  <option value="sci-fi">Sci-Fi</option>
+  <option value="horror">Horror</option>
+  <option value="romance">Romance</option>
+</select>
+
+<input type="date" placeholder="Select Date" class="p-1 rounded border" />
+
+   <select class="p-1 rounded border">
+  <option value="">Select Cinema</option>
+  <option value="movie1">F1 THE MOVIE</option>
+  <option value="movie2">SITAARE ZAMEEN PAR</option>
+  <option value="movie3">Empuraan</option>
+  <option value="movie4">28 YEARS LATER</option>
+  <option value="movie5">SEKHAR KAMMULA S KUBER</option>
+</select>
+
+  <select class="p-1 rounded border">
+  <option value="">Select Timing</option>
+  <option value="10:00">10:00 AM</option>
+  <option value="12:00">12:00 PM</option>
+  <option value="15:00">3:00 PM</option>
+  <option value="18:00">6:00 PM</option>
+  <option value="21:00">9:00 PM</option>
+</select>
+
+    <button class="bg-yellow-400 px-4 py-1 rounded">Book</button>
+  </div>
+
+  <!-- image -->
+<div class="flex flex-wrap justify-center p-4 bg-black gap-4 h-48">
+  <img src="https://topindianlist.com/wp-content/uploads/2024/02/more-about-imax-news.jpeg" alt="IMAX" class="h-full object-cover">
+  <img src="https://variety.com/wp-content/uploads/2022/08/4dx-auditorium.jpg?w=1000&h=563&crop=1" alt="4DX" class="h-full object-cover">
+  <img src="https://www.hollywoodreporter.com/wp-content/uploads/2015/03/screenx_keyart.jpg?w=1440&h=810&crop=1" alt="ScreenX" class="h-full object-cover">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHhSs16tqmtMb-DcpZyJKktewfO_iA-MWLg&s" alt="PXL" class="h-full object-cover">
+  <img src="https://www.cnet.com/a/img/resize/fe8e33e15c28caed682a2a6f78bcc9f28254b3cf/hub/2024/10/20/14a8dabc-187b-46cb-8797-1b0b84fd9ef0/gettyimages-1779743996-hxdbzxy-dolby-atmos.jpg?auto=webp&fit=crop&height=675&width=1200" alt="Dolby" class="h-full object-cover">
+</div>
+
+
+
+  <h2 class="text-4xl font-bold mb-10 mt-10">Now Showing</h2>
+
+  <!-- Filter Bar -->
+  <div class="flex items-center space-x-4 mb-6">
+    <label class="flex items-center space-x-1">
+      <input type="checkbox" class="accent-yellow-400">
+      <span class="text-sm">With Subtitle</span>
+    </label>
+   <select class="border rounded p-1 text-sm text-black">
+  <option>Categories</option>
+  <option>Action</option>
+  <option>Adventure</option>
+  <option>Animation</option>
+  <option>Comedy</option>
+  <option>Crime</option>
+  <option>Drama</option>
+  <option>Fantasy</option>
+  <option>Horror</option>
+  <option>Mystery</option>
+  <option>Romance</option>
+  <option>Science Fiction</option>
+  <option>Thriller</option>
+</select>
+
+    <select class="border rounded p-1 text-sm text-black">
+  <option>All Languages</option>
+  <option>English</option>
+  <option>Hindi</option>
+  <option>Tamil</option>
+  <option>Telugu</option>
+  <option>Kannada</option>
+  <option>Malayalam</option>
+</select>
+
+  </div>
+
+ <!-- Movie Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">   
+
+
+  <div class="flex flex-col">
+    <div class="relative">
+      <img src="https://m.media-amazon.com/images/M/MV5BOWRiOThkM2YtYzI4NS00OWViLTk0ODMtMjNlNDYyZWQ3MzNjXkEyXkFqcGc@._V1_.jpg" alt="F1 The Movie" class="rounded w-full aspect-square object-cover">
+      <span class="absolute top-0 left-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-br">Releasing on Fri Jun 27</span>
+    </div>
+    <h3 class="mt-2 font-bold">F1 THE MOVIE</h3>
+    <p class="text-sm">UA 16+</p>
+    <p class="text-sm">English</p>
+    <div class="flex space-x-2 mt-1">
+      <span class="border px-2 py-0.5 text-xs rounded">SPORTS</span>
+      <span class="text-xs text-gray-500">+2 more</span>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col">
+    <div class="relative">
+      <img src="https://assetscdn1.paytm.com/images/cinema/1-6bf14720-36f4-11f0-b426-a50671acfc24.jpg" alt="Sitaare Zameen Par" class="rounded w-full aspect-square object-cover">
+      <span class="absolute top-0 left-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-br">New Release</span>
+    </div>
+    <h3 class="mt-2 font-bold">SITAARE ZAMEEN PAR</h3>
+    <p class="text-sm">UA 13+</p>
+    <p class="text-sm">Hindi</p>
+    <div class="flex space-x-2 mt-1">
+      <span class="border px-2 py-0.5 text-xs rounded">DRAMA</span>
+      <span class="text-xs text-gray-500">+1 more</span>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col">
+    <div class="relative">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/35/L2_-_Empuraan_poster.jpg" alt="Empuraan" class="rounded w-full aspect-square object-cover">
+      <span class="absolute top-0 left-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-br">New Release</span>
+    </div>
+    <h3 class="mt-2 font-bold">Empuraan</h3>
+    <p class="text-sm">U/A 16+</p>
+    <p class="text-sm">Malayalam</p>
+    <div class="flex space-x-2 mt-1">
+      <span class="border px-2 py-0.5 text-xs rounded">Action</span>
+      <span class="text-xs text-gray-500">+2 more</span>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col">
+    <div class="relative">
+      <img src="https://m.media-amazon.com/images/M/MV5BNjgwYTI0YjctMWYzNS00MmI1LWI5YTctNmE1YjBkNDFlNWMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="28 Years Later" class="rounded w-full aspect-square object-cover">
+      <span class="absolute top-0 left-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-br">New Release</span>
+    </div>
+    <h3 class="mt-2 font-bold">28 YEARS LATER</h3>
+    <p class="text-sm">A</p>
+    <p class="text-sm">English</p>
+    <div class="flex space-x-2 mt-1">
+      <span class="border px-2 py-0.5 text-xs rounded">HORROR</span>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col">
+    <div class="relative">
+      <img src="https://i.redd.it/378c81ro5cnd1.jpeg" alt="Sekhar Kammula S Kuber..." class="rounded w-full aspect-square object-cover">
+      <span class="absolute top-0 left-0 bg-yellow-400 text-xs font-semibold px-2 py-1 rounded-br">New Release</span>
+    </div>
+    <h3 class="mt-2 font-bold">SEKHAR KAMMULA S KUBER...</h3>
+    <p class="text-sm">UA 13+</p>
+    <p class="text-sm">Tamil, Telugu</p>
+    <div class="flex space-x-2 mt-1">
+      <span class="border px-2 py-0.5 text-xs rounded">ACTION</span>
+      <span class="text-xs text-gray-500">+2 more</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Experiences Heading + Navigation -->
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-4xl font-bold mt-10 mb-10">Experiences</h2>
+  </div>
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+
+    <div class="relative">
+      <img src="https://preview.redd.it/imax-is-seemingly-playing-a-big-role-in-people-coming-back-v0-uj9dyixvvzeb1.jpg?width=640&crop=smart&auto=webp&s=d0f9413a1c92100e1a0d1442ab77853372a60422" alt="IMAX" class="rounded w-full h-64 object-cover">
+      <span class="absolute bottom-2 left-2 text-white font-bold text-xl">IMAX</span>
+    </div>
+
+    <div class="relative">
+      <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2018/03/21131819/PVR.jpg?w=1200&h=628&fill=blur&fit=fill" alt="4DX" class="rounded w-full h-64 object-cover">
+      <span class="absolute bottom-2 left-2 text-white font-bold text-xl">4DX</span>
+    </div>
+
+    <div class="relative">
+      <img src="https://variety.com/wp-content/uploads/2022/06/Ice-Theaters-2.jpg" alt="ICE Theaters" class="rounded w-full h-64 object-cover">
+      <span class="absolute bottom-2 left-2 text-white font-bold text-xl">ICE THEATERS</span>
+    </div>
+
+   
+    <div class="relative">
+      <img src="https://cdn.celluloidjunkie.com/wp-content/uploads/2018/08/14171710/ScreenX-The-Himalayas.jpg" alt="ScreenX" class="rounded w-full h-64 object-cover">
+      <span class="absolute bottom-2 left-2 text-white font-bold text-xl">SCREENX</span>
+    </div>
+
+  </div>
+<!-- Offers card Heading  -->
+  <div class="flex justify-between items-center mb-10 mt-10">
+    <h2 class="text-4xl font-bold">Offers For You</h2>
+    
+  </div>
+
+    <!-- Offer Card -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+
+    <div class="border rounded shadow-sm overflow-hidden">
+      <img src="https://i.etsystatic.com/49008526/r/il/7b8504/6107575093/il_fullxfull.6107575093_inhv.jpg" alt="Amex Offer" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold">Amex Platinum & Centurion – Buy 1 Get 1 Offer</h3>
+        <p class="text-sm text-gray-500 mt-1">Valid till: Sun, Aug 31, 2025</p>
+        <button class="mt-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1 rounded font-semibold">View</button>
+      </div>
+    </div>
+
+
+    <div class="border rounded shadow-sm overflow-hidden">
+      <img src="https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2025/01/AU-Credit-Cards-District-Discount-Offer.webp" alt="AU Credit Card Offer" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold">AU Credit Cards - 20% Off on Movie Ticket</h3>
+        <p class="text-sm text-gray-500 mt-1">Valid till: Mon, Jun 30, 2025</p>
+        <button class="mt-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1 rounded font-semibold">View</button>
+      </div>
+    </div>
+
+    <div class="border rounded shadow-sm overflow-hidden">
+      <img src="https://cd9941cc.delivery.rocketcdn.me/wp-content/uploads/2025/06/Supreme-Business-Credit-Cards-by-Axis-Bank.webp" alt="Axis Business Offer" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold">Axis Bank Business Supreme Debit Card- Buy 1 Get 1</h3>
+        <p class="text-sm text-gray-500 mt-1">Valid till: Mon, Jun 30, 2025</p>
+        <button class="mt-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1 rounded font-semibold">View</button>
+      </div>
+    </div>
+
+
+    <div class="border rounded shadow-sm overflow-hidden">
+      <img src="https://originserver-static1-uat.pvrcinemas.com/pvrcms/movie_v/13728_r3jrtPfq.jpg" alt="Axis Prestige Offer" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold">BEST SELLERS STARTING AT RS.99</h3>
+        <p class="text-sm text-gray-500 mt-1">Valid till: Mon, Jun 30, 2025</p>
+        <button class="mt-2 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1 rounded font-semibold">View</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+<footer class="bg-gray-900 text-gray-300 mt-10">
+  <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Movie buzz -->
+    <div>
+      <h3 class="text-white font-bold mb-2">Movie Buzz</h3>
+      <p class="text-sm">Your destination for premium movie experiences — IMAX, 4DX, ScreenX, and more!</p>
+    </div>
+
+    <!-- Quick Links-->
+    <div>
+      <h3 class="text-white font-bold mb-2">Quick Links</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:text-yellow-400">Showtimes</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Offers</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Experiences</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Cinemas</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3 class="text-white font-bold mb-2">Support</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#" class="hover:text-yellow-400">Contact Us</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- follow us-->
+    <div>
+      <h3 class="text-white font-bold mb-2">Follow Us</h3>
+      <div class="flex space-x-4 mt-2">
+
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="#" class="hover:text-yellow-400"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+     
+    
+      </div>
+    </div>
+
+  </div>
+<!-- copyright -->
+  <div class="border-t border-gray-700 text-center py-4 text-xs text-gray-500">
+    &copy; 2025 MOVIE_BUZZ. All rights reserved.
+  </div>
+</footer>
+
+
+  
+</body>
+</html>
